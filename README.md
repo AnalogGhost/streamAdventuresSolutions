@@ -1,3 +1,5 @@
+#**Questions?** Ask them [here](http://goo.gl/forms/DnUb9CvwYmJMKUc33)!
+
 # Stream Adventures
 
 ## 1.BEEP BOOP
@@ -256,7 +258,7 @@ process.stdin.pipe(concat(function (src) {
 }));
 ```
 
-First we require the module `concat-strean`.  Then we take `process.stdin` and pipe it to the `concat` function.  The `concat` module will take all the contents of a stream and treat it as a single buffer (as opposed to one chunk at a time).  We pass a function into `concat` that converts the buffer to a string, splits it into an array, reverses the array, then joins the array - creating a string again.  This basically reverses our string.
+First we require the module `concat-stream`.  Then we take `process.stdin` and pipe it to the `concat` function.  The `concat` module will take all the contents of a stream and treat it as a single buffer (as opposed to one chunk at a time).  We pass a function into `concat` that converts the buffer to a string, splits it into an array, reverses the array, then joins the array - creating a string again.  This basically reverses our string.
 
 We then console.log the result.
 
